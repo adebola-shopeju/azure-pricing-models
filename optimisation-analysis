@@ -1,0 +1,52 @@
+# Optimisation Analysis
+
+## 1. Pay-As-You-Go vs Reserved Instances
+
+| Pricing Model | Monthly Cost |
+|---|---|
+| Pay-As-You-Go | $182.96 |
+| 1 Year Reserved | $139.51 |
+| Monthly Saving | $43.45 |
+| Annual Saving | $521.40 |
+
+Switching both VMs from Pay-As-You-Go to a 1 year 
+savings plan reduced costs by approximately 31%. 
+This is ideal for workloads that run consistently 
+24/7 and do not need flexibility.
+
+## 2. LRS vs GRS Backup Redundancy
+
+| Redundancy | Protection | Cost Impact |
+|---|---|---|
+| LRS | Same region only | Lower cost |
+| GRS | Two regions | Higher cost |
+| RA-GRS | Two regions + readable | Highest cost |
+
+LRS was selected for this lab as it is the most 
+cost effective option for development environments. 
+Production systems handling critical data should 
+consider GRS or RA-GRS for disaster recovery.
+
+## 3. IaaS vs PaaS
+
+| Model | Example | Management | Cost |
+|---|---|---|---|
+| IaaS | Virtual Machines | Self managed | Higher overhead |
+| PaaS | Azure App Service | Microsoft managed | Lower overhead |
+
+For a small startup, PaaS is recommended because 
+Microsoft manages the underlying infrastructure, 
+removing the need for a dedicated system administrator. 
+This reduces both technical overhead and staffing costs.
+
+## 4. Azure Hybrid Benefit
+
+Companies with existing Windows Server licences can 
+apply Azure Hybrid Benefit to reduce VM costs by 
+approximately 50%. Linux VMs do not require this 
+as Linux is free by default.
+
+## Conclusion
+Through optimisation, monthly costs were reduced 
+from $182.96 to $139.51 — a saving of $43.45 per 
+month or $521.40 per year.
